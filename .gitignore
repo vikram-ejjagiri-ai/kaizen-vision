@@ -1,0 +1,16 @@
+# datasets are downloaded with scripts/get_data.py (not redistributed, see data/SOURCES.md)
+data/neu/
+data/casting/
+data/calib/
+# pretrained weights are downloaded automatically
+models/
+# example images cut from the datasets
+reports/anomaly_examples.npz
+reports/code_examples.npz
+reports/*.log
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env

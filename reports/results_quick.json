@@ -1,0 +1,2424 @@
+{
+ "steel": {
+  "task": "steel",
+  "classes": [
+   "crazing",
+   "inclusion",
+   "patches",
+   "pitted_surface",
+   "rolled-in_scale",
+   "scratches"
+  ],
+  "n_train": 1440,
+  "n_test": 120,
+  "image_px": 200,
+  "methods": {},
+  "robustness": {
+   "clean": {
+    "0": {
+     "classical": {
+      "accuracy": 0.9916666666666667
+     },
+     "features": {
+      "accuracy": 1.0
+     },
+     "finetuned": {
+      "accuracy": 1.0
+     },
+     "classical_robust": {
+      "accuracy": 1.0
+     },
+     "features_robust": {
+      "accuracy": 1.0
+     },
+     "finetuned_robust": {
+      "accuracy": 1.0
+     }
+    }
+   },
+   "underexposure": {
+    "2": {
+     "classical": {
+      "accuracy": 0.95
+     },
+     "features": {
+      "accuracy": 1.0
+     },
+     "finetuned": {
+      "accuracy": 0.8
+     },
+     "classical_robust": {
+      "accuracy": 0.9916666666666667
+     },
+     "features_robust": {
+      "accuracy": 1.0
+     },
+     "finetuned_robust": {
+      "accuracy": 0.9083333333333333
+     }
+    },
+    "4": {
+     "classical": {
+      "accuracy": 0.3333333333333333
+     },
+     "features": {
+      "accuracy": 0.75
+     },
+     "finetuned": {
+      "accuracy": 0.275
+     },
+     "classical_robust": {
+      "accuracy": 0.8916666666666667
+     },
+     "features_robust": {
+      "accuracy": 0.9833333333333333
+     },
+     "finetuned_robust": {
+      "accuracy": 0.575
+     }
+    }
+   },
+   "overexposure": {
+    "2": {
+     "classical": {
+      "accuracy": 0.6166666666666667
+     },
+     "features": {
+      "accuracy": 0.8416666666666667
+     },
+     "finetuned": {
+      "accuracy": 0.8416666666666667
+     },
+     "classical_robust": {
+      "accuracy": 0.9416666666666667
+     },
+     "features_robust": {
+      "accuracy": 0.9416666666666667
+     },
+     "finetuned_robust": {
+      "accuracy": 0.975
+     }
+    },
+    "4": {
+     "classical": {
+      "accuracy": 0.24166666666666667
+     },
+     "features": {
+      "accuracy": 0.7083333333333334
+     },
+     "finetuned": {
+      "accuracy": 0.5166666666666667
+     },
+     "classical_robust": {
+      "accuracy": 0.6416666666666667
+     },
+     "features_robust": {
+      "accuracy": 0.8666666666666667
+     },
+     "finetuned_robust": {
+      "accuracy": 0.6916666666666667
+     }
+    }
+   },
+   "low_contrast": {
+    "2": {
+     "classical": {
+      "accuracy": 0.825
+     },
+     "features": {
+      "accuracy": 1.0
+     },
+     "finetuned": {
+      "accuracy": 0.9333333333333333
+     },
+     "classical_robust": {
+      "accuracy": 0.9833333333333333
+     },
+     "features_robust": {
+      "accuracy": 1.0
+     },
+     "finetuned_robust": {
+      "accuracy": 0.9916666666666667
+     }
+    },
+    "4": {
+     "classical": {
+      "accuracy": 0.30833333333333335
+     },
+     "features": {
+      "accuracy": 0.6166666666666667
+     },
+     "finetuned": {
+      "accuracy": 0.44166666666666665
+     },
+     "classical_robust": {
+      "accuracy": 0.775
+     },
+     "features_robust": {
+      "accuracy": 0.875
+     },
+     "finetuned_robust": {
+      "accuracy": 0.625
+     }
+    }
+   },
+   "uneven_light": {
+    "2": {
+     "classical": {
+      "accuracy": 0.9916666666666667
+     },
+     "features": {
+      "accuracy": 1.0
+     },
+     "finetuned": {
+      "accuracy": 0.9916666666666667
+     },
+     "classical_robust": {
+      "accuracy": 0.9916666666666667
+     },
+     "features_robust": {
+      "accuracy": 1.0
+     },
+     "finetuned_robust": {
+      "accuracy": 0.9916666666666667
+     }
+    },
+    "4": {
+     "classical": {
+      "accuracy": 0.8416666666666667
+     },
+     "features": {
+      "accuracy": 0.975
+     },
+     "finetuned": {
+      "accuracy": 0.7833333333333333
+     },
+     "classical_robust": {
+      "accuracy": 0.8666666666666667
+     },
+     "features_robust": {
+      "accuracy": 0.975
+     },
+     "finetuned_robust": {
+      "accuracy": 0.9666666666666667
+     }
+    }
+   },
+   "defocus": {
+    "2": {
+     "classical": {
+      "accuracy": 0.31666666666666665
+     },
+     "features": {
+      "accuracy": 0.6416666666666667
+     },
+     "finetuned": {
+      "accuracy": 0.5083333333333333
+     },
+     "classical_robust": {
+      "accuracy": 0.9
+     },
+     "features_robust": {
+      "accuracy": 0.9833333333333333
+     },
+     "finetuned_robust": {
+      "accuracy": 0.9416666666666667
+     }
+    },
+    "4": {
+     "classical": {
+      "accuracy": 0.15
+     },
+     "features": {
+      "accuracy": 0.4166666666666667
+     },
+     "finetuned": {
+      "accuracy": 0.4666666666666667
+     },
+     "classical_robust": {
+      "accuracy": 0.8
+     },
+     "features_robust": {
+      "accuracy": 0.7083333333333334
+     },
+     "finetuned_robust": {
+      "accuracy": 0.825
+     }
+    }
+   },
+   "motion_blur": {
+    "2": {
+     "classical": {
+      "accuracy": 0.3333333333333333
+     },
+     "features": {
+      "accuracy": 0.75
+     },
+     "finetuned": {
+      "accuracy": 0.7
+     },
+     "classical_robust": {
+      "accuracy": 0.8666666666666667
+     },
+     "features_robust": {
+      "accuracy": 0.9
+     },
+     "finetuned_robust": {
+      "accuracy": 0.9166666666666666
+     }
+    },
+    "4": {
+     "classical": {
+      "accuracy": 0.21666666666666667
+     },
+     "features": {
+      "accuracy": 0.4166666666666667
+     },
+     "finetuned": {
+      "accuracy": 0.5583333333333333
+     },
+     "classical_robust": {
+      "accuracy": 0.8833333333333333
+     },
+     "features_robust": {
+      "accuracy": 0.7833333333333333
+     },
+     "finetuned_robust": {
+      "accuracy": 0.825
+     }
+    }
+   },
+   "noise": {
+    "2": {
+     "classical": {
+      "accuracy": 0.4166666666666667
+     },
+     "features": {
+      "accuracy": 0.75
+     },
+     "finetuned": {
+      "accuracy": 0.7583333333333333
+     },
+     "classical_robust": {
+      "accuracy": 0.8583333333333333
+     },
+     "features_robust": {
+      "accuracy": 0.925
+     },
+     "finetuned_robust": {
+      "accuracy": 0.95
+     }
+    },
+    "4": {
+     "classical": {
+      "accuracy": 0.15
+     },
+     "features": {
+      "accuracy": 0.5916666666666667
+     },
+     "finetuned": {
+      "accuracy": 0.4166666666666667
+     },
+     "classical_robust": {
+      "accuracy": 0.2
+     },
+     "features_robust": {
+      "accuracy": 0.8333333333333334
+     },
+     "finetuned_robust": {
+      "accuracy": 0.675
+     }
+    }
+   },
+   "low_resolution": {
+    "2": {
+     "classical": {
+      "accuracy": 0.3
+     },
+     "features": {
+      "accuracy": 0.6583333333333333
+     },
+     "finetuned": {
+      "accuracy": 0.5416666666666666
+     },
+     "classical_robust": {
+      "accuracy": 0.925
+     },
+     "features_robust": {
+      "accuracy": 0.9833333333333333
+     },
+     "finetuned_robust": {
+      "accuracy": 0.925
+     }
+    },
+    "4": {
+     "classical": {
+      "accuracy": 0.275
+     },
+     "features": {
+      "accuracy": 0.6166666666666667
+     },
+     "finetuned": {
+      "accuracy": 0.6166666666666667
+     },
+     "classical_robust": {
+      "accuracy": 0.8666666666666667
+     },
+     "features_robust": {
+      "accuracy": 0.9333333333333333
+     },
+     "finetuned_robust": {
+      "accuracy": 0.9
+     }
+    }
+   },
+   "rotation": {
+    "2": {
+     "classical": {
+      "accuracy": 0.45
+     },
+     "features": {
+      "accuracy": 0.9916666666666667
+     },
+     "finetuned": {
+      "accuracy": 0.825
+     },
+     "classical_robust": {
+      "accuracy": 0.9666666666666667
+     },
+     "features_robust": {
+      "accuracy": 1.0
+     },
+     "finetuned_robust": {
+      "accuracy": 0.9916666666666667
+     }
+    },
+    "4": {
+     "classical": {
+      "accuracy": 0.4083333333333333
+     },
+     "features": {
+      "accuracy": 0.8083333333333333
+     },
+     "finetuned": {
+      "accuracy": 0.675
+     },
+     "classical_robust": {
+      "accuracy": 0.725
+     },
+     "features_robust": {
+      "accuracy": 0.9
+     },
+     "finetuned_robust": {
+      "accuracy": 0.925
+     }
+    }
+   },
+   "camera_tilt": {
+    "2": {
+     "classical": {
+      "accuracy": 0.5
+     },
+     "features": {
+      "accuracy": 1.0
+     },
+     "finetuned": {
+      "accuracy": 0.8916666666666667
+     },
+     "classical_robust": {
+      "accuracy": 0.975
+     },
+     "features_robust": {
+      "accuracy": 1.0
+     },
+     "finetuned_robust": {
+      "accuracy": 0.9916666666666667
+     }
+    },
+    "4": {
+     "classical": {
+      "accuracy": 0.5333333333333333
+     },
+     "features": {
+      "accuracy": 0.9833333333333333
+     },
+     "finetuned": {
+      "accuracy": 0.85
+     },
+     "classical_robust": {
+      "accuracy": 0.9416666666666667
+     },
+     "features_robust": {
+      "accuracy": 0.9916666666666667
+     },
+     "finetuned_robust": {
+      "accuracy": 0.975
+     }
+    }
+   },
+   "jpeg": {
+    "2": {
+     "classical": {
+      "accuracy": 0.325
+     },
+     "features": {
+      "accuracy": 0.6916666666666667
+     },
+     "finetuned": {
+      "accuracy": 0.7833333333333333
+     },
+     "classical_robust": {
+      "accuracy": 0.8083333333333333
+     },
+     "features_robust": {
+      "accuracy": 0.9416666666666667
+     },
+     "finetuned_robust": {
+      "accuracy": 0.8
+     }
+    },
+    "4": {
+     "classical": {
+      "accuracy": 0.175
+     },
+     "features": {
+      "accuracy": 0.4666666666666667
+     },
+     "finetuned": {
+      "accuracy": 0.7083333333333334
+     },
+     "classical_robust": {
+      "accuracy": 0.5
+     },
+     "features_robust": {
+      "accuracy": 0.8083333333333333
+     },
+     "finetuned_robust": {
+      "accuracy": 0.5166666666666667
+     }
+    }
+   }
+  },
+  "data_needs": {
+   "0.05": {
+    "classical": {
+     "accuracy": 0.9583333333333334,
+     "min": 0.9583333333333334,
+     "images_per_class": 12
+    },
+    "features": {
+     "accuracy": 0.9666666666666667,
+     "min": 0.9666666666666667,
+     "images_per_class": 12
+    },
+    "finetuned": {
+     "accuracy": 0.6916666666666667,
+     "min": 0.6916666666666667,
+     "images_per_class": 12
+    }
+   },
+   "0.25": {
+    "classical": {
+     "accuracy": 0.9833333333333333,
+     "min": 0.9833333333333333,
+     "images_per_class": 60
+    },
+    "features": {
+     "accuracy": 0.9833333333333333,
+     "min": 0.9833333333333333,
+     "images_per_class": 60
+    },
+    "finetuned": {
+     "accuracy": 0.9083333333333333,
+     "min": 0.9083333333333333,
+     "images_per_class": 60
+    }
+   },
+   "1.0": {
+    "classical": {
+     "accuracy": 0.9916666666666667,
+     "min": 0.9916666666666667,
+     "images_per_class": 240
+    },
+    "features": {
+     "accuracy": 1.0,
+     "min": 1.0,
+     "images_per_class": 240
+    },
+    "finetuned": {
+     "accuracy": 1.0,
+     "min": 1.0,
+     "images_per_class": 240
+    }
+   }
+  },
+  "speed": {
+   "classical": {
+    "ms_per_image": 27.0,
+    "train_seconds": 38.1,
+    "parameters": "about 80 features, SVM"
+   },
+   "features": {
+    "ms_per_image": 6.4,
+    "train_seconds": 15.7,
+    "parameters": 6724008
+   },
+   "finetuned": {
+    "ms_per_image": 4.7,
+    "train_seconds": 89.6,
+    "parameters": 5450694
+   }
+  }
+ },
+ "casting": {
+  "task": "casting",
+  "classes": [
+   "ok",
+   "defect"
+  ],
+  "n_train": 910,
+  "n_test": 120,
+  "image_px": 256,
+  "methods": {},
+  "robustness": {
+   "clean": {
+    "0": {
+     "classical": {
+      "accuracy": 0.9916666666666667,
+      "missed_defects": 0.013333333333333308,
+      "false_rejects": 0.0,
+      "auroc": 1.0
+     },
+     "features": {
+      "accuracy": 0.9916666666666667,
+      "missed_defects": 0.013333333333333308,
+      "false_rejects": 0.0,
+      "auroc": 1.0
+     },
+     "finetuned": {
+      "accuracy": 0.9833333333333333,
+      "missed_defects": 0.013333333333333308,
+      "false_rejects": 0.022222222222222223,
+      "auroc": 0.9997037037037036
+     },
+     "classical_robust": {
+      "accuracy": 0.9916666666666667,
+      "missed_defects": 0.013333333333333308,
+      "false_rejects": 0.0,
+      "auroc": 0.9997037037037036
+     },
+     "features_robust": {
+      "accuracy": 0.9916666666666667,
+      "missed_defects": 0.013333333333333308,
+      "false_rejects": 0.0,
+      "auroc": 1.0
+     },
+     "finetuned_robust": {
+      "accuracy": 0.9833333333333333,
+      "missed_defects": 0.026666666666666616,
+      "false_rejects": 0.0,
+      "auroc": 0.9985185185185185
+     },
+     "anomaly": {
+      "accuracy": 0.925,
+      "missed_defects": 0.09333333333333338,
+      "false_rejects": 0.044444444444444446,
+      "auroc": 0.9845925925925926
+     }
+    }
+   },
+   "underexposure": {
+    "2": {
+     "classical": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.6186666666666667
+     },
+     "features": {
+      "accuracy": 0.9166666666666666,
+      "missed_defects": 0.0,
+      "false_rejects": 0.2222222222222222,
+      "auroc": 0.9890370370370369
+     },
+     "finetuned": {
+      "accuracy": 0.9166666666666666,
+      "missed_defects": 0.026666666666666616,
+      "false_rejects": 0.17777777777777778,
+      "auroc": 0.9783703703703703
+     },
+     "classical_robust": {
+      "accuracy": 0.8166666666666667,
+      "missed_defects": 0.18666666666666665,
+      "false_rejects": 0.17777777777777778,
+      "auroc": 0.9019259259259258
+     },
+     "features_robust": {
+      "accuracy": 0.9833333333333333,
+      "missed_defects": 0.026666666666666616,
+      "false_rejects": 0.0,
+      "auroc": 0.9994074074074074
+     },
+     "finetuned_robust": {
+      "accuracy": 0.9666666666666667,
+      "missed_defects": 0.026666666666666616,
+      "false_rejects": 0.044444444444444446,
+      "auroc": 0.994962962962963
+     },
+     "anomaly": {
+      "accuracy": 0.925,
+      "missed_defects": 0.040000000000000036,
+      "false_rejects": 0.13333333333333333,
+      "auroc": 0.9748148148148148
+     }
+    },
+    "4": {
+     "classical": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.5748148148148149
+     },
+     "features": {
+      "accuracy": 0.825,
+      "missed_defects": 0.013333333333333308,
+      "false_rejects": 0.4444444444444444,
+      "auroc": 0.973037037037037
+     },
+     "finetuned": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.7757037037037038
+     },
+     "classical_robust": {
+      "accuracy": 0.675,
+      "missed_defects": 0.013333333333333308,
+      "false_rejects": 0.8444444444444444,
+      "auroc": 0.802962962962963
+     },
+     "features_robust": {
+      "accuracy": 0.9083333333333333,
+      "missed_defects": 0.1466666666666666,
+      "false_rejects": 0.0,
+      "auroc": 0.9878518518518519
+     },
+     "finetuned_robust": {
+      "accuracy": 0.85,
+      "missed_defects": 0.12,
+      "false_rejects": 0.2,
+      "auroc": 0.922074074074074
+     },
+     "anomaly": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.8918518518518519
+     }
+    }
+   },
+   "overexposure": {
+    "2": {
+     "classical": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.23496296296296298
+     },
+     "features": {
+      "accuracy": 0.7916666666666666,
+      "missed_defects": 0.30666666666666664,
+      "false_rejects": 0.044444444444444446,
+      "auroc": 0.9564444444444444
+     },
+     "finetuned": {
+      "accuracy": 0.925,
+      "missed_defects": 0.026666666666666616,
+      "false_rejects": 0.15555555555555556,
+      "auroc": 0.9813333333333333
+     },
+     "classical_robust": {
+      "accuracy": 0.65,
+      "missed_defects": 0.19999999999999996,
+      "false_rejects": 0.6,
+      "auroc": 0.6900740740740742
+     },
+     "features_robust": {
+      "accuracy": 0.95,
+      "missed_defects": 0.07999999999999996,
+      "false_rejects": 0.0,
+      "auroc": 0.9964444444444445
+     },
+     "finetuned_robust": {
+      "accuracy": 0.9416666666666667,
+      "missed_defects": 0.06666666666666665,
+      "false_rejects": 0.044444444444444446,
+      "auroc": 0.9896296296296297
+     },
+     "anomaly": {
+      "accuracy": 0.65,
+      "missed_defects": 0.0,
+      "false_rejects": 0.9333333333333333,
+      "auroc": 0.8382222222222222
+     }
+    },
+    "4": {
+     "classical": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.4866666666666667
+     },
+     "features": {
+      "accuracy": 0.65,
+      "missed_defects": 0.33333333333333337,
+      "false_rejects": 0.37777777777777777,
+      "auroc": 0.6441481481481482
+     },
+     "finetuned": {
+      "accuracy": 0.7416666666666667,
+      "missed_defects": 0.053333333333333344,
+      "false_rejects": 0.6,
+      "auroc": 0.9173333333333333
+     },
+     "classical_robust": {
+      "accuracy": 0.5333333333333333,
+      "missed_defects": 0.2533333333333333,
+      "false_rejects": 0.8222222222222222,
+      "auroc": 0.3875555555555556
+     },
+     "features_robust": {
+      "accuracy": 0.825,
+      "missed_defects": 0.16000000000000003,
+      "false_rejects": 0.2,
+      "auroc": 0.9223703703703703
+     },
+     "finetuned_robust": {
+      "accuracy": 0.7666666666666667,
+      "missed_defects": 0.19999999999999996,
+      "false_rejects": 0.28888888888888886,
+      "auroc": 0.853037037037037
+     },
+     "anomaly": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.46370370370370373
+     }
+    }
+   },
+   "low_contrast": {
+    "2": {
+     "classical": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.5143703703703704
+     },
+     "features": {
+      "accuracy": 0.8583333333333333,
+      "missed_defects": 0.013333333333333308,
+      "false_rejects": 0.35555555555555557,
+      "auroc": 0.9842962962962963
+     },
+     "finetuned": {
+      "accuracy": 0.9666666666666667,
+      "missed_defects": 0.053333333333333344,
+      "false_rejects": 0.0,
+      "auroc": 0.9961481481481482
+     },
+     "classical_robust": {
+      "accuracy": 0.9166666666666666,
+      "missed_defects": 0.10666666666666669,
+      "false_rejects": 0.044444444444444446,
+      "auroc": 0.9517037037037037
+     },
+     "features_robust": {
+      "accuracy": 0.9833333333333333,
+      "missed_defects": 0.026666666666666616,
+      "false_rejects": 0.0,
+      "auroc": 0.9997037037037036
+     },
+     "finetuned_robust": {
+      "accuracy": 0.9833333333333333,
+      "missed_defects": 0.026666666666666616,
+      "false_rejects": 0.0,
+      "auroc": 0.997037037037037
+     },
+     "anomaly": {
+      "accuracy": 0.875,
+      "missed_defects": 0.06666666666666665,
+      "false_rejects": 0.2222222222222222,
+      "auroc": 0.9534814814814815
+     }
+    },
+    "4": {
+     "classical": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.2882962962962963
+     },
+     "features": {
+      "accuracy": 0.7583333333333333,
+      "missed_defects": 0.040000000000000036,
+      "false_rejects": 0.5777777777777777,
+      "auroc": 0.8951111111111112
+     },
+     "finetuned": {
+      "accuracy": 0.6083333333333333,
+      "missed_defects": 0.6266666666666667,
+      "false_rejects": 0.0,
+      "auroc": 0.9182222222222223
+     },
+     "classical_robust": {
+      "accuracy": 0.7416666666666667,
+      "missed_defects": 0.06666666666666665,
+      "false_rejects": 0.5777777777777777,
+      "auroc": 0.8669629629629629
+     },
+     "features_robust": {
+      "accuracy": 0.825,
+      "missed_defects": 0.28,
+      "false_rejects": 0.0,
+      "auroc": 0.9531851851851852
+     },
+     "finetuned_robust": {
+      "accuracy": 0.9,
+      "missed_defects": 0.16000000000000003,
+      "false_rejects": 0.0,
+      "auroc": 0.991111111111111
+     },
+     "anomaly": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.7057777777777778
+     }
+    }
+   },
+   "uneven_light": {
+    "2": {
+     "classical": {
+      "accuracy": 0.7666666666666667,
+      "missed_defects": 0.3466666666666667,
+      "false_rejects": 0.044444444444444446,
+      "auroc": 0.8705185185185186
+     },
+     "features": {
+      "accuracy": 0.975,
+      "missed_defects": 0.040000000000000036,
+      "false_rejects": 0.0,
+      "auroc": 0.9979259259259259
+     },
+     "finetuned": {
+      "accuracy": 0.9833333333333333,
+      "missed_defects": 0.026666666666666616,
+      "false_rejects": 0.0,
+      "auroc": 0.9997037037037036
+     },
+     "classical_robust": {
+      "accuracy": 0.8333333333333334,
+      "missed_defects": 0.19999999999999996,
+      "false_rejects": 0.1111111111111111,
+      "auroc": 0.9093333333333333
+     },
+     "features_robust": {
+      "accuracy": 0.9583333333333334,
+      "missed_defects": 0.06666666666666665,
+      "false_rejects": 0.0,
+      "auroc": 1.0
+     },
+     "finetuned_robust": {
+      "accuracy": 0.975,
+      "missed_defects": 0.026666666666666616,
+      "false_rejects": 0.022222222222222223,
+      "auroc": 0.9973333333333334
+     },
+     "anomaly": {
+      "accuracy": 0.9416666666666667,
+      "missed_defects": 0.06666666666666665,
+      "false_rejects": 0.044444444444444446,
+      "auroc": 0.9893333333333333
+     }
+    },
+    "4": {
+     "classical": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.586962962962963
+     },
+     "features": {
+      "accuracy": 0.8666666666666667,
+      "missed_defects": 0.09333333333333338,
+      "false_rejects": 0.2,
+      "auroc": 0.9623703703703703
+     },
+     "finetuned": {
+      "accuracy": 0.9583333333333334,
+      "missed_defects": 0.013333333333333308,
+      "false_rejects": 0.08888888888888889,
+      "auroc": 0.9952592592592593
+     },
+     "classical_robust": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.6853333333333333
+     },
+     "features_robust": {
+      "accuracy": 0.9333333333333333,
+      "missed_defects": 0.10666666666666669,
+      "false_rejects": 0.0,
+      "auroc": 0.986962962962963
+     },
+     "finetuned_robust": {
+      "accuracy": 0.9666666666666667,
+      "missed_defects": 0.026666666666666616,
+      "false_rejects": 0.044444444444444446,
+      "auroc": 0.9964444444444445
+     },
+     "anomaly": {
+      "accuracy": 0.6833333333333333,
+      "missed_defects": 0.013333333333333308,
+      "false_rejects": 0.8222222222222222,
+      "auroc": 0.8897777777777779
+     }
+    }
+   },
+   "defocus": {
+    "2": {
+     "classical": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.3623703703703704
+     },
+     "features": {
+      "accuracy": 0.8583333333333333,
+      "missed_defects": 0.09333333333333338,
+      "false_rejects": 0.2222222222222222,
+      "auroc": 0.9540740740740741
+     },
+     "finetuned": {
+      "accuracy": 0.9,
+      "missed_defects": 0.16000000000000003,
+      "false_rejects": 0.0,
+      "auroc": 0.9896296296296296
+     },
+     "classical_robust": {
+      "accuracy": 0.8083333333333333,
+      "missed_defects": 0.06666666666666665,
+      "false_rejects": 0.4,
+      "auroc": 0.8503703703703703
+     },
+     "features_robust": {
+      "accuracy": 0.8583333333333333,
+      "missed_defects": 0.06666666666666665,
+      "false_rejects": 0.26666666666666666,
+      "auroc": 0.9531851851851851
+     },
+     "finetuned_robust": {
+      "accuracy": 0.9333333333333333,
+      "missed_defects": 0.053333333333333344,
+      "false_rejects": 0.08888888888888889,
+      "auroc": 0.9854814814814814
+     },
+     "anomaly": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.8521481481481481
+     }
+    },
+    "4": {
+     "classical": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.4426666666666667
+     },
+     "features": {
+      "accuracy": 0.4583333333333333,
+      "missed_defects": 0.8533333333333333,
+      "false_rejects": 0.022222222222222223,
+      "auroc": 0.7291851851851853
+     },
+     "finetuned": {
+      "accuracy": 0.7083333333333334,
+      "missed_defects": 0.24,
+      "false_rejects": 0.37777777777777777,
+      "auroc": 0.7985185185185185
+     },
+     "classical_robust": {
+      "accuracy": 0.6416666666666667,
+      "missed_defects": 0.3866666666666667,
+      "false_rejects": 0.3111111111111111,
+      "auroc": 0.7413333333333333
+     },
+     "features_robust": {
+      "accuracy": 0.7333333333333333,
+      "missed_defects": 0.026666666666666616,
+      "false_rejects": 0.6666666666666666,
+      "auroc": 0.8725925925925925
+     },
+     "finetuned_robust": {
+      "accuracy": 0.7416666666666667,
+      "missed_defects": 0.21333333333333337,
+      "false_rejects": 0.3333333333333333,
+      "auroc": 0.8281481481481481
+     },
+     "anomaly": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.5223703703703704
+     }
+    }
+   },
+   "motion_blur": {
+    "2": {
+     "classical": {
+      "accuracy": 0.6666666666666666,
+      "missed_defects": 0.040000000000000036,
+      "false_rejects": 0.8222222222222222,
+      "auroc": 0.5597037037037037
+     },
+     "features": {
+      "accuracy": 0.8583333333333333,
+      "missed_defects": 0.1333333333333333,
+      "false_rejects": 0.15555555555555556,
+      "auroc": 0.9339259259259259
+     },
+     "finetuned": {
+      "accuracy": 0.9416666666666667,
+      "missed_defects": 0.07999999999999996,
+      "false_rejects": 0.022222222222222223,
+      "auroc": 0.9920000000000001
+     },
+     "classical_robust": {
+      "accuracy": 0.8166666666666667,
+      "missed_defects": 0.06666666666666665,
+      "false_rejects": 0.37777777777777777,
+      "auroc": 0.8776296296296296
+     },
+     "features_robust": {
+      "accuracy": 0.9333333333333333,
+      "missed_defects": 0.06666666666666665,
+      "false_rejects": 0.06666666666666667,
+      "auroc": 0.965925925925926
+     },
+     "finetuned_robust": {
+      "accuracy": 0.9416666666666667,
+      "missed_defects": 0.013333333333333308,
+      "false_rejects": 0.13333333333333333,
+      "auroc": 0.9911111111111112
+     },
+     "anomaly": {
+      "accuracy": 0.6333333333333333,
+      "missed_defects": 0.013333333333333308,
+      "false_rejects": 0.9555555555555556,
+      "auroc": 0.8752592592592593
+     }
+    },
+    "4": {
+     "classical": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.5463703703703704
+     },
+     "features": {
+      "accuracy": 0.7333333333333333,
+      "missed_defects": 0.36,
+      "false_rejects": 0.1111111111111111,
+      "auroc": 0.8557037037037036
+     },
+     "finetuned": {
+      "accuracy": 0.75,
+      "missed_defects": 0.24,
+      "false_rejects": 0.26666666666666666,
+      "auroc": 0.8257777777777777
+     },
+     "classical_robust": {
+      "accuracy": 0.7166666666666667,
+      "missed_defects": 0.21333333333333337,
+      "false_rejects": 0.4,
+      "auroc": 0.8565925925925927
+     },
+     "features_robust": {
+      "accuracy": 0.7916666666666666,
+      "missed_defects": 0.30666666666666664,
+      "false_rejects": 0.044444444444444446,
+      "auroc": 0.9125925925925926
+     },
+     "finetuned_robust": {
+      "accuracy": 0.8166666666666667,
+      "missed_defects": 0.1466666666666666,
+      "false_rejects": 0.24444444444444444,
+      "auroc": 0.9057777777777778
+     },
+     "anomaly": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.7979259259259259
+     }
+    }
+   },
+   "noise": {
+    "2": {
+     "classical": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.5164444444444445
+     },
+     "features": {
+      "accuracy": 0.7,
+      "missed_defects": 0.18666666666666665,
+      "false_rejects": 0.4888888888888889,
+      "auroc": 0.8287407407407408
+     },
+     "finetuned": {
+      "accuracy": 0.975,
+      "missed_defects": 0.040000000000000036,
+      "false_rejects": 0.0,
+      "auroc": 0.9985185185185185
+     },
+     "classical_robust": {
+      "accuracy": 0.7,
+      "missed_defects": 0.17333333333333334,
+      "false_rejects": 0.5111111111111111,
+      "auroc": 0.8082962962962963
+     },
+     "features_robust": {
+      "accuracy": 0.9083333333333333,
+      "missed_defects": 0.10666666666666669,
+      "false_rejects": 0.06666666666666667,
+      "auroc": 0.9626666666666668
+     },
+     "finetuned_robust": {
+      "accuracy": 0.975,
+      "missed_defects": 0.040000000000000036,
+      "false_rejects": 0.0,
+      "auroc": 0.9973333333333333
+     },
+     "anomaly": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.554962962962963
+     }
+    },
+    "4": {
+     "classical": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.5
+     },
+     "features": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.654074074074074
+     },
+     "finetuned": {
+      "accuracy": 0.6416666666666667,
+      "missed_defects": 0.0,
+      "false_rejects": 0.9555555555555556,
+      "auroc": 0.7623703703703704
+     },
+     "classical_robust": {
+      "accuracy": 0.38333333333333336,
+      "missed_defects": 0.6933333333333334,
+      "false_rejects": 0.4888888888888889,
+      "auroc": 0.33955555555555555
+     },
+     "features_robust": {
+      "accuracy": 0.7583333333333333,
+      "missed_defects": 0.19999999999999996,
+      "false_rejects": 0.3111111111111111,
+      "auroc": 0.8654814814814815
+     },
+     "finetuned_robust": {
+      "accuracy": 0.7666666666666667,
+      "missed_defects": 0.06666666666666665,
+      "false_rejects": 0.5111111111111111,
+      "auroc": 0.8912592592592593
+     },
+     "anomaly": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.41481481481481486
+     }
+    }
+   },
+   "low_resolution": {
+    "2": {
+     "classical": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.3914074074074074
+     },
+     "features": {
+      "accuracy": 0.8833333333333333,
+      "missed_defects": 0.09333333333333338,
+      "false_rejects": 0.15555555555555556,
+      "auroc": 0.9531851851851851
+     },
+     "finetuned": {
+      "accuracy": 0.9583333333333334,
+      "missed_defects": 0.040000000000000036,
+      "false_rejects": 0.044444444444444446,
+      "auroc": 0.997037037037037
+     },
+     "classical_robust": {
+      "accuracy": 0.8,
+      "missed_defects": 0.040000000000000036,
+      "false_rejects": 0.4666666666666667,
+      "auroc": 0.8222222222222222
+     },
+     "features_robust": {
+      "accuracy": 0.85,
+      "missed_defects": 0.12,
+      "false_rejects": 0.2,
+      "auroc": 0.9348148148148149
+     },
+     "finetuned_robust": {
+      "accuracy": 0.9666666666666667,
+      "missed_defects": 0.013333333333333308,
+      "false_rejects": 0.06666666666666667,
+      "auroc": 0.997925925925926
+     },
+     "anomaly": {
+      "accuracy": 0.7333333333333333,
+      "missed_defects": 0.0,
+      "false_rejects": 0.7111111111111111,
+      "auroc": 0.9410370370370371
+     }
+    },
+    "4": {
+     "classical": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.5327407407407407
+     },
+     "features": {
+      "accuracy": 0.8166666666666667,
+      "missed_defects": 0.1333333333333333,
+      "false_rejects": 0.26666666666666666,
+      "auroc": 0.8794074074074075
+     },
+     "finetuned": {
+      "accuracy": 0.7833333333333333,
+      "missed_defects": 0.21333333333333337,
+      "false_rejects": 0.2222222222222222,
+      "auroc": 0.869037037037037
+     },
+     "classical_robust": {
+      "accuracy": 0.6916666666666667,
+      "missed_defects": 0.026666666666666616,
+      "false_rejects": 0.7777777777777778,
+      "auroc": 0.8139259259259259
+     },
+     "features_robust": {
+      "accuracy": 0.7416666666666667,
+      "missed_defects": 0.18666666666666665,
+      "false_rejects": 0.37777777777777777,
+      "auroc": 0.8802962962962964
+     },
+     "finetuned_robust": {
+      "accuracy": 0.825,
+      "missed_defects": 0.053333333333333344,
+      "false_rejects": 0.37777777777777777,
+      "auroc": 0.9404444444444445
+     },
+     "anomaly": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.6933333333333334
+     }
+    }
+   },
+   "rotation": {
+    "2": {
+     "classical": {
+      "accuracy": 0.8916666666666667,
+      "missed_defects": 0.053333333333333344,
+      "false_rejects": 0.2,
+      "auroc": 0.9691851851851851
+     },
+     "features": {
+      "accuracy": 0.9583333333333334,
+      "missed_defects": 0.053333333333333344,
+      "false_rejects": 0.022222222222222223,
+      "auroc": 0.9958518518518518
+     },
+     "finetuned": {
+      "accuracy": 0.9833333333333333,
+      "missed_defects": 0.026666666666666616,
+      "false_rejects": 0.0,
+      "auroc": 1.0
+     },
+     "classical_robust": {
+      "accuracy": 0.9083333333333333,
+      "missed_defects": 0.013333333333333308,
+      "false_rejects": 0.2222222222222222,
+      "auroc": 0.9845925925925926
+     },
+     "features_robust": {
+      "accuracy": 0.9416666666666667,
+      "missed_defects": 0.09333333333333338,
+      "false_rejects": 0.0,
+      "auroc": 0.9940740740740741
+     },
+     "finetuned_robust": {
+      "accuracy": 0.9916666666666667,
+      "missed_defects": 0.013333333333333308,
+      "false_rejects": 0.0,
+      "auroc": 0.9991111111111112
+     },
+     "anomaly": {
+      "accuracy": 0.8666666666666667,
+      "missed_defects": 0.040000000000000036,
+      "false_rejects": 0.28888888888888886,
+      "auroc": 0.8894814814814815
+     }
+    },
+    "4": {
+     "classical": {
+      "accuracy": 0.7083333333333334,
+      "missed_defects": 0.18666666666666665,
+      "false_rejects": 0.4666666666666667,
+      "auroc": 0.8216296296296296
+     },
+     "features": {
+      "accuracy": 0.6333333333333333,
+      "missed_defects": 0.0,
+      "false_rejects": 0.9777777777777777,
+      "auroc": 0.8303703703703702
+     },
+     "finetuned": {
+      "accuracy": 0.9833333333333333,
+      "missed_defects": 0.013333333333333308,
+      "false_rejects": 0.022222222222222223,
+      "auroc": 0.997925925925926
+     },
+     "classical_robust": {
+      "accuracy": 0.7416666666666667,
+      "missed_defects": 0.1333333333333333,
+      "false_rejects": 0.4666666666666667,
+      "auroc": 0.8414814814814814
+     },
+     "features_robust": {
+      "accuracy": 0.675,
+      "missed_defects": 0.026666666666666616,
+      "false_rejects": 0.8222222222222222,
+      "auroc": 0.8502222222222222
+     },
+     "finetuned_robust": {
+      "accuracy": 0.975,
+      "missed_defects": 0.013333333333333308,
+      "false_rejects": 0.044444444444444446,
+      "auroc": 0.9982222222222222
+     },
+     "anomaly": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.8488888888888888
+     }
+    }
+   },
+   "camera_tilt": {
+    "2": {
+     "classical": {
+      "accuracy": 0.8833333333333333,
+      "missed_defects": 0.040000000000000036,
+      "false_rejects": 0.24444444444444444,
+      "auroc": 0.9469629629629629
+     },
+     "features": {
+      "accuracy": 0.9833333333333333,
+      "missed_defects": 0.026666666666666616,
+      "false_rejects": 0.0,
+      "auroc": 1.0
+     },
+     "finetuned": {
+      "accuracy": 0.9916666666666667,
+      "missed_defects": 0.013333333333333308,
+      "false_rejects": 0.0,
+      "auroc": 0.9997037037037036
+     },
+     "classical_robust": {
+      "accuracy": 0.8833333333333333,
+      "missed_defects": 0.0,
+      "false_rejects": 0.3111111111111111,
+      "auroc": 0.9914074074074074
+     },
+     "features_robust": {
+      "accuracy": 0.9833333333333333,
+      "missed_defects": 0.026666666666666616,
+      "false_rejects": 0.0,
+      "auroc": 0.9988148148148148
+     },
+     "finetuned_robust": {
+      "accuracy": 0.9833333333333333,
+      "missed_defects": 0.026666666666666616,
+      "false_rejects": 0.0,
+      "auroc": 0.9973333333333334
+     },
+     "anomaly": {
+      "accuracy": 0.9333333333333333,
+      "missed_defects": 0.040000000000000036,
+      "false_rejects": 0.1111111111111111,
+      "auroc": 0.968
+     }
+    },
+    "4": {
+     "classical": {
+      "accuracy": 0.8916666666666667,
+      "missed_defects": 0.053333333333333344,
+      "false_rejects": 0.2,
+      "auroc": 0.9691851851851851
+     },
+     "features": {
+      "accuracy": 0.95,
+      "missed_defects": 0.07999999999999996,
+      "false_rejects": 0.0,
+      "auroc": 0.9982222222222222
+     },
+     "finetuned": {
+      "accuracy": 0.9916666666666667,
+      "missed_defects": 0.013333333333333308,
+      "false_rejects": 0.0,
+      "auroc": 1.0
+     },
+     "classical_robust": {
+      "accuracy": 0.8583333333333333,
+      "missed_defects": 0.013333333333333308,
+      "false_rejects": 0.35555555555555557,
+      "auroc": 0.9940740740740741
+     },
+     "features_robust": {
+      "accuracy": 0.9583333333333334,
+      "missed_defects": 0.053333333333333344,
+      "false_rejects": 0.022222222222222223,
+      "auroc": 0.9985185185185185
+     },
+     "finetuned_robust": {
+      "accuracy": 0.975,
+      "missed_defects": 0.026666666666666616,
+      "false_rejects": 0.022222222222222223,
+      "auroc": 0.9976296296296296
+     },
+     "anomaly": {
+      "accuracy": 0.7666666666666667,
+      "missed_defects": 0.013333333333333308,
+      "false_rejects": 0.6,
+      "auroc": 0.8373333333333333
+     }
+    }
+   },
+   "jpeg": {
+    "2": {
+     "classical": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.6014814814814815
+     },
+     "features": {
+      "accuracy": 0.7416666666666667,
+      "missed_defects": 0.41333333333333333,
+      "false_rejects": 0.0,
+      "auroc": 0.8992592592592592
+     },
+     "finetuned": {
+      "accuracy": 0.9,
+      "missed_defects": 0.0,
+      "false_rejects": 0.26666666666666666,
+      "auroc": 0.9955555555555555
+     },
+     "classical_robust": {
+      "accuracy": 0.6416666666666667,
+      "missed_defects": 0.0,
+      "false_rejects": 0.9555555555555556,
+      "auroc": 0.8337777777777777
+     },
+     "features_robust": {
+      "accuracy": 0.7833333333333333,
+      "missed_defects": 0.2533333333333333,
+      "false_rejects": 0.15555555555555556,
+      "auroc": 0.8814814814814814
+     },
+     "finetuned_robust": {
+      "accuracy": 0.9416666666666667,
+      "missed_defects": 0.013333333333333308,
+      "false_rejects": 0.13333333333333333,
+      "auroc": 0.997037037037037
+     },
+     "anomaly": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.8527407407407408
+     }
+    },
+    "4": {
+     "classical": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.6838518518518518
+     },
+     "features": {
+      "accuracy": 0.45,
+      "missed_defects": 0.8266666666666667,
+      "false_rejects": 0.08888888888888889,
+      "auroc": 0.6877037037037038
+     },
+     "finetuned": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.8610370370370369
+     },
+     "classical_robust": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.6595555555555556
+     },
+     "features_robust": {
+      "accuracy": 0.575,
+      "missed_defects": 0.6666666666666667,
+      "false_rejects": 0.022222222222222223,
+      "auroc": 0.8465185185185186
+     },
+     "finetuned_robust": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.9585185185185185
+     },
+     "anomaly": {
+      "accuracy": 0.625,
+      "missed_defects": 0.0,
+      "false_rejects": 1.0,
+      "auroc": 0.5306666666666666
+     }
+    }
+   }
+  },
+  "data_needs": {
+   "0.05": {
+    "classical": {
+     "accuracy": 0.8666666666666667,
+     "min": 0.8666666666666667,
+     "images_per_class": 18
+    },
+    "features": {
+     "accuracy": 0.825,
+     "min": 0.825,
+     "images_per_class": 18
+    },
+    "finetuned": {
+     "accuracy": 0.525,
+     "min": 0.525,
+     "images_per_class": 18
+    }
+   },
+   "0.25": {
+    "classical": {
+     "accuracy": 0.925,
+     "min": 0.925,
+     "images_per_class": 91
+    },
+    "features": {
+     "accuracy": 0.975,
+     "min": 0.975,
+     "images_per_class": 91
+    },
+    "finetuned": {
+     "accuracy": 0.8833333333333333,
+     "min": 0.8833333333333333,
+     "images_per_class": 91
+    }
+   },
+   "1.0": {
+    "classical": {
+     "accuracy": 0.9916666666666667,
+     "min": 0.9916666666666667,
+     "images_per_class": 363
+    },
+    "features": {
+     "accuracy": 0.9916666666666667,
+     "min": 0.9916666666666667,
+     "images_per_class": 363
+    },
+    "finetuned": {
+     "accuracy": 0.9833333333333333,
+     "min": 0.9833333333333333,
+     "images_per_class": 363
+    }
+   }
+  },
+  "speed": {
+   "classical": {
+    "ms_per_image": 39.0,
+    "train_seconds": 36.8,
+    "parameters": "about 80 features, SVM"
+   },
+   "features": {
+    "ms_per_image": 6.6,
+    "train_seconds": 6.7,
+    "parameters": 6724008
+   },
+   "finetuned": {
+    "ms_per_image": 4.7,
+    "train_seconds": 57.4,
+    "parameters": 5445570
+   },
+   "anomaly": {
+    "ms_per_image": 15.3,
+    "train_seconds": 29.6,
+    "parameters": "6724008 + memory bank (2273, 512)"
+   }
+  },
+  "anomaly_threshold": 5.246261119842529,
+  "data_needs_anomaly": {
+   "10": {
+    "accuracy": 0.43333333333333335,
+    "missed_defects": 0.8666666666666667,
+    "false_rejects": 0.06666666666666667,
+    "auroc": 0.6847407407407406
+   },
+   "50": {
+    "accuracy": 0.675,
+    "missed_defects": 0.5066666666666666,
+    "false_rejects": 0.022222222222222223,
+    "auroc": 0.9072592592592593
+   }
+  }
+ },
+ "codes": {
+  "n_per_kind": 15,
+  "read_rate": {
+   "clean": {
+    "0": {
+     "qr|OpenCV": 0.8666666666666667,
+     "qr|ZBar": 1.0,
+     "qr|ZXing-C++": 0.8666666666666667,
+     "datamatrix|ZXing-C++": 0.7333333333333333,
+     "text|RapidOCR": 1.0
+    }
+   },
+   "underexposure": {
+    "2": {
+     "qr|OpenCV": 1.0,
+     "qr|ZBar": 1.0,
+     "qr|ZXing-C++": 0.8666666666666667,
+     "datamatrix|ZXing-C++": 1.0,
+     "text|RapidOCR": 1.0
+    },
+    "4": {
+     "qr|OpenCV": 0.8666666666666667,
+     "qr|ZBar": 1.0,
+     "qr|ZXing-C++": 0.8666666666666667,
+     "datamatrix|ZXing-C++": 1.0,
+     "text|RapidOCR": 1.0
+    }
+   },
+   "overexposure": {
+    "2": {
+     "qr|OpenCV": 0.8666666666666667,
+     "qr|ZBar": 0.7333333333333333,
+     "qr|ZXing-C++": 0.8,
+     "datamatrix|ZXing-C++": 1.0,
+     "text|RapidOCR": 1.0
+    },
+    "4": {
+     "qr|OpenCV": 0.4,
+     "qr|ZBar": 0.0,
+     "qr|ZXing-C++": 0.0,
+     "datamatrix|ZXing-C++": 0.06666666666666667,
+     "text|RapidOCR": 0.6
+    }
+   },
+   "low_contrast": {
+    "2": {
+     "qr|OpenCV": 1.0,
+     "qr|ZBar": 1.0,
+     "qr|ZXing-C++": 0.8666666666666667,
+     "datamatrix|ZXing-C++": 1.0,
+     "text|RapidOCR": 1.0
+    },
+    "4": {
+     "qr|OpenCV": 0.8666666666666667,
+     "qr|ZBar": 1.0,
+     "qr|ZXing-C++": 0.8666666666666667,
+     "datamatrix|ZXing-C++": 1.0,
+     "text|RapidOCR": 1.0
+    }
+   },
+   "uneven_light": {
+    "2": {
+     "qr|OpenCV": 0.8666666666666667,
+     "qr|ZBar": 1.0,
+     "qr|ZXing-C++": 0.8666666666666667,
+     "datamatrix|ZXing-C++": 0.8,
+     "text|RapidOCR": 1.0
+    },
+    "4": {
+     "qr|OpenCV": 0.9333333333333333,
+     "qr|ZBar": 1.0,
+     "qr|ZXing-C++": 0.8666666666666667,
+     "datamatrix|ZXing-C++": 0.8666666666666667,
+     "text|RapidOCR": 1.0
+    }
+   },
+   "defocus": {
+    "2": {
+     "qr|OpenCV": 0.8666666666666667,
+     "qr|ZBar": 1.0,
+     "qr|ZXing-C++": 0.9333333333333333,
+     "datamatrix|ZXing-C++": 1.0,
+     "text|RapidOCR": 1.0
+    },
+    "4": {
+     "qr|OpenCV": 0.0,
+     "qr|ZBar": 0.0,
+     "qr|ZXing-C++": 0.0,
+     "datamatrix|ZXing-C++": 0.0,
+     "text|RapidOCR": 0.0
+    }
+   },
+   "motion_blur": {
+    "2": {
+     "qr|OpenCV": 0.8666666666666667,
+     "qr|ZBar": 1.0,
+     "qr|ZXing-C++": 0.8666666666666667,
+     "datamatrix|ZXing-C++": 1.0,
+     "text|RapidOCR": 0.6666666666666666
+    },
+    "4": {
+     "qr|OpenCV": 0.0,
+     "qr|ZBar": 0.0,
+     "qr|ZXing-C++": 0.0,
+     "datamatrix|ZXing-C++": 0.0,
+     "text|RapidOCR": 0.0
+    }
+   },
+   "noise": {
+    "2": {
+     "qr|OpenCV": 0.8,
+     "qr|ZBar": 0.06666666666666667,
+     "qr|ZXing-C++": 0.8,
+     "datamatrix|ZXing-C++": 0.2,
+     "text|RapidOCR": 1.0
+    },
+    "4": {
+     "qr|OpenCV": 0.0,
+     "qr|ZBar": 0.0,
+     "qr|ZXing-C++": 0.0,
+     "datamatrix|ZXing-C++": 0.0,
+     "text|RapidOCR": 0.06666666666666667
+    }
+   },
+   "low_resolution": {
+    "2": {
+     "qr|OpenCV": 0.8,
+     "qr|ZBar": 1.0,
+     "qr|ZXing-C++": 0.9333333333333333,
+     "datamatrix|ZXing-C++": 1.0,
+     "text|RapidOCR": 1.0
+    },
+    "4": {
+     "qr|OpenCV": 0.26666666666666666,
+     "qr|ZBar": 0.6666666666666666,
+     "qr|ZXing-C++": 0.9333333333333333,
+     "datamatrix|ZXing-C++": 0.8666666666666667,
+     "text|RapidOCR": 0.13333333333333333
+    }
+   },
+   "rotation": {
+    "2": {
+     "qr|OpenCV": 1.0,
+     "qr|ZBar": 1.0,
+     "qr|ZXing-C++": 1.0,
+     "datamatrix|ZXing-C++": 0.9333333333333333,
+     "text|RapidOCR": 1.0
+    },
+    "4": {
+     "qr|OpenCV": 0.6666666666666666,
+     "qr|ZBar": 0.5333333333333333,
+     "qr|ZXing-C++": 0.6,
+     "datamatrix|ZXing-C++": 0.6,
+     "text|RapidOCR": 1.0
+    }
+   },
+   "camera_tilt": {
+    "2": {
+     "qr|OpenCV": 0.9333333333333333,
+     "qr|ZBar": 1.0,
+     "qr|ZXing-C++": 1.0,
+     "datamatrix|ZXing-C++": 0.9333333333333333,
+     "text|RapidOCR": 1.0
+    },
+    "4": {
+     "qr|OpenCV": 1.0,
+     "qr|ZBar": 1.0,
+     "qr|ZXing-C++": 0.8666666666666667,
+     "datamatrix|ZXing-C++": 0.8666666666666667,
+     "text|RapidOCR": 1.0
+    }
+   },
+   "jpeg": {
+    "2": {
+     "qr|OpenCV": 0.8666666666666667,
+     "qr|ZBar": 1.0,
+     "qr|ZXing-C++": 0.8666666666666667,
+     "datamatrix|ZXing-C++": 0.8,
+     "text|RapidOCR": 1.0
+    },
+    "4": {
+     "qr|OpenCV": 0.6666666666666666,
+     "qr|ZBar": 0.5333333333333333,
+     "qr|ZXing-C++": 0.9333333333333333,
+     "datamatrix|ZXing-C++": 0.8666666666666667,
+     "text|RapidOCR": 0.2
+    }
+   }
+  },
+  "ms_per_image": {
+   "qr|OpenCV": 5.3,
+   "qr|ZBar": 2.2,
+   "qr|ZXing-C++": 1.0,
+   "datamatrix|ZXing-C++": 0.9,
+   "text|RapidOCR": 115.3
+  }
+ },
+ "degradations": {
+  "underexposure": {
+   "simulates": "lamp ageing, shorter exposure time",
+   "unit": "brightness factor",
+   "levels": [
+    0.75,
+    0.55,
+    0.4,
+    0.25
+   ]
+  },
+  "overexposure": {
+   "simulates": "reflections, longer exposure time",
+   "unit": "brightness factor",
+   "levels": [
+    1.3,
+    1.6,
+    2.0,
+    2.5
+   ]
+  },
+  "low_contrast": {
+   "simulates": "flat, diffuse lighting",
+   "unit": "contrast factor",
+   "levels": [
+    0.75,
+    0.55,
+    0.4,
+    0.25
+   ]
+  },
+  "uneven_light": {
+   "simulates": "side light, vignetting",
+   "unit": "brightness drop across image",
+   "levels": [
+    0.2,
+    0.4,
+    0.6,
+    0.8
+   ]
+  },
+  "defocus": {
+   "simulates": "wrong working distance, focus drift",
+   "unit": "blur sigma (px)",
+   "levels": [
+    0.75,
+    1.5,
+    2.5,
+    4.0
+   ]
+  },
+  "motion_blur": {
+   "simulates": "part moving on the conveyor",
+   "unit": "blur length (px)",
+   "levels": [
+    3,
+    7,
+    11,
+    15
+   ]
+  },
+  "noise": {
+   "simulates": "high camera gain in poor light",
+   "unit": "noise sigma (grey levels)",
+   "levels": [
+    5,
+    10,
+    20,
+    35
+   ]
+  },
+  "low_resolution": {
+   "simulates": "cheaper camera, larger field of view",
+   "unit": "scale factor",
+   "levels": [
+    0.75,
+    0.5,
+    0.35,
+    0.25
+   ]
+  },
+  "rotation": {
+   "simulates": "part orientation on the fixture",
+   "unit": "degrees",
+   "levels": [
+    5,
+    10,
+    20,
+    45
+   ]
+  },
+  "camera_tilt": {
+   "simulates": "camera not perpendicular to the part",
+   "unit": "degrees",
+   "levels": [
+    5,
+    10,
+    15,
+    25
+   ]
+  },
+  "jpeg": {
+   "simulates": "image compression on the network",
+   "unit": "JPEG quality",
+   "levels": [
+    50,
+    30,
+    15,
+    8
+   ]
+  }
+ },
+ "summary": {
+  "steel": {
+   "classical": {
+    "clean": 0.9916666666666667,
+    "tolerance_levels": {
+     "underexposure": 2,
+     "overexposure": 0,
+     "low_contrast": 0,
+     "uneven_light": 2,
+     "defocus": 0,
+     "motion_blur": 0,
+     "noise": 0,
+     "low_resolution": 0,
+     "rotation": 0,
+     "camera_tilt": 0,
+     "jpeg": 0
+    },
+    "mean_accuracy_degraded": 0.4390151515151515,
+    "worst_case": {
+     "underexposure": 0.3333333333333333,
+     "overexposure": 0.24166666666666667,
+     "low_contrast": 0.30833333333333335,
+     "uneven_light": 0.8416666666666667,
+     "defocus": 0.15,
+     "motion_blur": 0.21666666666666667,
+     "noise": 0.15,
+     "low_resolution": 0.275,
+     "rotation": 0.4083333333333333,
+     "camera_tilt": 0.5,
+     "jpeg": 0.175
+    }
+   },
+   "features": {
+    "clean": 1.0,
+    "tolerance_levels": {
+     "underexposure": 2,
+     "overexposure": 0,
+     "low_contrast": 2,
+     "uneven_light": 4,
+     "defocus": 0,
+     "motion_blur": 0,
+     "noise": 0,
+     "low_resolution": 0,
+     "rotation": 2,
+     "camera_tilt": 4,
+     "jpeg": 0
+    },
+    "mean_accuracy_degraded": 0.7579545454545454,
+    "worst_case": {
+     "underexposure": 0.75,
+     "overexposure": 0.7083333333333334,
+     "low_contrast": 0.6166666666666667,
+     "uneven_light": 0.975,
+     "defocus": 0.4166666666666667,
+     "motion_blur": 0.4166666666666667,
+     "noise": 0.5916666666666667,
+     "low_resolution": 0.6166666666666667,
+     "rotation": 0.8083333333333333,
+     "camera_tilt": 0.9833333333333333,
+     "jpeg": 0.4666666666666667
+    }
+   },
+   "finetuned": {
+    "clean": 1.0,
+    "tolerance_levels": {
+     "underexposure": 0,
+     "overexposure": 0,
+     "low_contrast": 0,
+     "uneven_light": 2,
+     "defocus": 0,
+     "motion_blur": 0,
+     "noise": 0,
+     "low_resolution": 0,
+     "rotation": 0,
+     "camera_tilt": 0,
+     "jpeg": 0
+    },
+    "mean_accuracy_degraded": 0.6765151515151515,
+    "worst_case": {
+     "underexposure": 0.275,
+     "overexposure": 0.5166666666666667,
+     "low_contrast": 0.44166666666666665,
+     "uneven_light": 0.7833333333333333,
+     "defocus": 0.4666666666666667,
+     "motion_blur": 0.5583333333333333,
+     "noise": 0.4166666666666667,
+     "low_resolution": 0.5416666666666666,
+     "rotation": 0.675,
+     "camera_tilt": 0.85,
+     "jpeg": 0.7083333333333334
+    }
+   },
+   "classical_robust": {
+    "clean": 1.0,
+    "tolerance_levels": {
+     "underexposure": 2,
+     "overexposure": 0,
+     "low_contrast": 2,
+     "uneven_light": 2,
+     "defocus": 0,
+     "motion_blur": 0,
+     "noise": 0,
+     "low_resolution": 0,
+     "rotation": 2,
+     "camera_tilt": 2,
+     "jpeg": 0
+    },
+    "mean_accuracy_degraded": 0.8318181818181819,
+    "worst_case": {
+     "underexposure": 0.8916666666666667,
+     "overexposure": 0.6416666666666667,
+     "low_contrast": 0.775,
+     "uneven_light": 0.8666666666666667,
+     "defocus": 0.8,
+     "motion_blur": 0.8666666666666667,
+     "noise": 0.2,
+     "low_resolution": 0.8666666666666667,
+     "rotation": 0.725,
+     "camera_tilt": 0.9416666666666667,
+     "jpeg": 0.5
+    }
+   },
+   "features_robust": {
+    "clean": 1.0,
+    "tolerance_levels": {
+     "underexposure": 4,
+     "overexposure": 0,
+     "low_contrast": 2,
+     "uneven_light": 4,
+     "defocus": 2,
+     "motion_blur": 0,
+     "noise": 0,
+     "low_resolution": 2,
+     "rotation": 2,
+     "camera_tilt": 4,
+     "jpeg": 0
+    },
+    "mean_accuracy_degraded": 0.9242424242424242,
+    "worst_case": {
+     "underexposure": 0.9833333333333333,
+     "overexposure": 0.8666666666666667,
+     "low_contrast": 0.875,
+     "uneven_light": 0.975,
+     "defocus": 0.7083333333333334,
+     "motion_blur": 0.7833333333333333,
+     "noise": 0.8333333333333334,
+     "low_resolution": 0.9333333333333333,
+     "rotation": 0.9,
+     "camera_tilt": 0.9916666666666667,
+     "jpeg": 0.8083333333333333
+    }
+   },
+   "finetuned_robust": {
+    "clean": 1.0,
+    "tolerance_levels": {
+     "underexposure": 0,
+     "overexposure": 2,
+     "low_contrast": 2,
+     "uneven_light": 4,
+     "defocus": 0,
+     "motion_blur": 0,
+     "noise": 2,
+     "low_resolution": 0,
+     "rotation": 2,
+     "camera_tilt": 4,
+     "jpeg": 0
+    },
+    "mean_accuracy_degraded": 0.8583333333333335,
+    "worst_case": {
+     "underexposure": 0.575,
+     "overexposure": 0.6916666666666667,
+     "low_contrast": 0.625,
+     "uneven_light": 0.9666666666666667,
+     "defocus": 0.825,
+     "motion_blur": 0.825,
+     "noise": 0.675,
+     "low_resolution": 0.9,
+     "rotation": 0.925,
+     "camera_tilt": 0.975,
+     "jpeg": 0.5166666666666667
+    }
+   }
+  },
+  "casting": {
+   "classical": {
+    "clean": 0.9916666666666667,
+    "tolerance_levels": {
+     "underexposure": 0,
+     "overexposure": 0,
+     "low_contrast": 0,
+     "uneven_light": 0,
+     "defocus": 0,
+     "motion_blur": 0,
+     "noise": 0,
+     "low_resolution": 0,
+     "rotation": 0,
+     "camera_tilt": 0,
+     "jpeg": 0
+    },
+    "mean_accuracy_degraded": 0.6731060606060607,
+    "worst_case": {
+     "underexposure": 0.625,
+     "overexposure": 0.625,
+     "low_contrast": 0.625,
+     "uneven_light": 0.625,
+     "defocus": 0.625,
+     "motion_blur": 0.625,
+     "noise": 0.625,
+     "low_resolution": 0.625,
+     "rotation": 0.7083333333333334,
+     "camera_tilt": 0.8833333333333333,
+     "jpeg": 0.625
+    }
+   },
+   "features": {
+    "clean": 0.9916666666666667,
+    "tolerance_levels": {
+     "underexposure": 0,
+     "overexposure": 0,
+     "low_contrast": 0,
+     "uneven_light": 2,
+     "defocus": 0,
+     "motion_blur": 0,
+     "noise": 0,
+     "low_resolution": 0,
+     "rotation": 2,
+     "camera_tilt": 4,
+     "jpeg": 0
+    },
+    "mean_accuracy_degraded": 0.7859848484848484,
+    "worst_case": {
+     "underexposure": 0.825,
+     "overexposure": 0.65,
+     "low_contrast": 0.7583333333333333,
+     "uneven_light": 0.8666666666666667,
+     "defocus": 0.4583333333333333,
+     "motion_blur": 0.7333333333333333,
+     "noise": 0.625,
+     "low_resolution": 0.8166666666666667,
+     "rotation": 0.6333333333333333,
+     "camera_tilt": 0.95,
+     "jpeg": 0.45
+    }
+   },
+   "finetuned": {
+    "clean": 0.9833333333333333,
+    "tolerance_levels": {
+     "underexposure": 0,
+     "overexposure": 0,
+     "low_contrast": 2,
+     "uneven_light": 4,
+     "defocus": 0,
+     "motion_blur": 2,
+     "noise": 2,
+     "low_resolution": 2,
+     "rotation": 4,
+     "camera_tilt": 4,
+     "jpeg": 0
+    },
+    "mean_accuracy_degraded": 0.8571969696969696,
+    "worst_case": {
+     "underexposure": 0.625,
+     "overexposure": 0.7416666666666667,
+     "low_contrast": 0.6083333333333333,
+     "uneven_light": 0.9583333333333334,
+     "defocus": 0.7083333333333334,
+     "motion_blur": 0.75,
+     "noise": 0.6416666666666667,
+     "low_resolution": 0.7833333333333333,
+     "rotation": 0.9833333333333333,
+     "camera_tilt": 0.9916666666666667,
+     "jpeg": 0.625
+    }
+   },
+   "classical_robust": {
+    "clean": 0.9916666666666667,
+    "tolerance_levels": {
+     "underexposure": 0,
+     "overexposure": 0,
+     "low_contrast": 0,
+     "uneven_light": 0,
+     "defocus": 0,
+     "motion_blur": 0,
+     "noise": 0,
+     "low_resolution": 0,
+     "rotation": 0,
+     "camera_tilt": 0,
+     "jpeg": 0
+    },
+    "mean_accuracy_degraded": 0.7276515151515152,
+    "worst_case": {
+     "underexposure": 0.675,
+     "overexposure": 0.5333333333333333,
+     "low_contrast": 0.7416666666666667,
+     "uneven_light": 0.625,
+     "defocus": 0.6416666666666667,
+     "motion_blur": 0.7166666666666667,
+     "noise": 0.38333333333333336,
+     "low_resolution": 0.6916666666666667,
+     "rotation": 0.7416666666666667,
+     "camera_tilt": 0.8583333333333333,
+     "jpeg": 0.625
+    }
+   },
+   "features_robust": {
+    "clean": 0.9916666666666667,
+    "tolerance_levels": {
+     "underexposure": 2,
+     "overexposure": 2,
+     "low_contrast": 2,
+     "uneven_light": 2,
+     "defocus": 0,
+     "motion_blur": 0,
+     "noise": 0,
+     "low_resolution": 0,
+     "rotation": 2,
+     "camera_tilt": 4,
+     "jpeg": 0
+    },
+    "mean_accuracy_degraded": 0.8571969696969698,
+    "worst_case": {
+     "underexposure": 0.9083333333333333,
+     "overexposure": 0.825,
+     "low_contrast": 0.825,
+     "uneven_light": 0.9333333333333333,
+     "defocus": 0.7333333333333333,
+     "motion_blur": 0.7916666666666666,
+     "noise": 0.7583333333333333,
+     "low_resolution": 0.7416666666666667,
+     "rotation": 0.675,
+     "camera_tilt": 0.9583333333333334,
+     "jpeg": 0.575
+    }
+   },
+   "finetuned_robust": {
+    "clean": 0.9833333333333333,
+    "tolerance_levels": {
+     "underexposure": 2,
+     "overexposure": 2,
+     "low_contrast": 2,
+     "uneven_light": 4,
+     "defocus": 2,
+     "motion_blur": 2,
+     "noise": 2,
+     "low_resolution": 2,
+     "rotation": 4,
+     "camera_tilt": 4,
+     "jpeg": 2
+    },
+    "mean_accuracy_degraded": 0.900378787878788,
+    "worst_case": {
+     "underexposure": 0.85,
+     "overexposure": 0.7666666666666667,
+     "low_contrast": 0.9,
+     "uneven_light": 0.9666666666666667,
+     "defocus": 0.7416666666666667,
+     "motion_blur": 0.8166666666666667,
+     "noise": 0.7666666666666667,
+     "low_resolution": 0.825,
+     "rotation": 0.975,
+     "camera_tilt": 0.975,
+     "jpeg": 0.625
+    }
+   },
+   "anomaly": {
+    "clean": 0.925,
+    "tolerance_levels": {
+     "underexposure": 2,
+     "overexposure": 0,
+     "low_contrast": 2,
+     "uneven_light": 2,
+     "defocus": 0,
+     "motion_blur": 0,
+     "noise": 0,
+     "low_resolution": 0,
+     "rotation": 0,
+     "camera_tilt": 2,
+     "jpeg": 0
+    },
+    "mean_accuracy_degraded": 0.7049242424242425,
+    "worst_case": {
+     "underexposure": 0.625,
+     "overexposure": 0.625,
+     "low_contrast": 0.625,
+     "uneven_light": 0.6833333333333333,
+     "defocus": 0.625,
+     "motion_blur": 0.625,
+     "noise": 0.625,
+     "low_resolution": 0.625,
+     "rotation": 0.625,
+     "camera_tilt": 0.7666666666666667,
+     "jpeg": 0.625
+    }
+   }
+  }
+ },
+ "meta": {
+  "date": "2026-11-07 14:52",
+  "mode": "quick",
+  "minutes": 18.9,
+  "cpu": "x86_64, 2 threads",
+  "network": "yolo11s-cls.pt"
+ }
+}
